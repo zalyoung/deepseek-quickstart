@@ -111,16 +111,16 @@ docker run -d \
 
 > 此处以生成小红书爆款文案为例
 
-5.1 自动下载模型
+### 5.1 自动下载模型
 在 `Admin Panel --> Settings --> Models` 中下载 Ollama 支持模型到本地，本文以`deepseek-r1:8b` 为例。
 ![Download Model](image01.png)
 
-5.2 自动下载模型
-在 `Settings --> General --> System Prompt` 中配置系统级提示词
+### 5.2 配置系统级系提示次
+在 `Settings --> General --> System Prompt` 中配置系统级提示词。本文以「小红书爆款写作助手」为例。
 ![Syetem Prompt](image02.png)
 
-5.3 选择模型并开启对话
-开启新对话 `New Chat`， 选择 `deepseek-r1:8b` 作为模型开始对话
+### 5.3 选择模型并开启对话
+开启新对话 `New Chat`， 选择 `deepseek-r1:8b` 作为模型开启对话
 ![New Chat](image03.png)
 
 ## 注意事项
@@ -129,5 +129,3 @@ docker run -d \
 3. 确保防火墙允许相应端口的访问
 4. 如果不需要 GPU 支持，可以移除 `--gpus=all` 参数
 5. 首次启动可能需要一些时间来下载镜像
-
-部署完成后，您就可以开始使用私有化的AI助手进行对话了
